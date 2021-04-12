@@ -7,4 +7,4 @@
 
 ## How Hospitals operate?
 * A hospital contains one or more wards that house hospital beds for inpatients. It may also have acute services such as an emergency department, operating theatre, and intensive care unit, as well as a range of medical specialty departments. A well-equipped hospital may be classified as a trauma center. They may also have other services such a hospital pharmacy, radiology, pathology and medical laboratories. Some hospitals have outpatient departments such as behavioral health services, dentistry, and rehabilitation services.
-<img align = "middle" src = "https://www.hok.com/wp-content/uploads/2020/10/healthcare-grid-1900.jpg" width = "50%" align = "middle" />
+<img style = "float: middle" src = "https://www.hok.com/wp-content/uploads/2020/10/healthcare-grid-1900.jpg" width = "50%"  />
