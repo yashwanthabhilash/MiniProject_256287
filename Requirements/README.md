@@ -8,3 +8,8 @@
 ## How Hospitals operate?
 * A hospital contains one or more wards that house hospital beds for inpatients. It may also have acute services such as an emergency department, operating theatre, and intensive care unit, as well as a range of medical specialty departments. A well-equipped hospital may be classified as a trauma center. They may also have other services such a hospital pharmacy, radiology, pathology and medical laboratories. Some hospitals have outpatient departments such as behavioral health services, dentistry, and rehabilitation services.
 <img src = "https://www.hok.com/wp-content/uploads/2020/10/healthcare-grid-1900.jpg" />
+
+## Scope for technology to bang in!
+* In this project, one of the corners where technology can play a role will be discussed. As far as hospitals are concerned, maintaining records is a very important job as it holds a vital role to play. When the record of a patient is stored against his/her name or unique id it becomes very easy to track multiple required info. For example : previous visits could be traced, previous complications can be traced, and so on.
+<img src =  "https://www.governmentcomputing.com/wp-content/uploads/sites/32/2019/08/medical-781422_960_720.jpg" />
+
