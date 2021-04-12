@@ -1,6 +1,6 @@
-# Requirements
+# Title - Contact Management System 
 
-## Title - Contact Management System 
+## Requirements
 
 ## Introduction
 * Hospitals and clinics are the places where our body gets the required maintenance services like the car gets in the garage. If we go with the dictionary, hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment. 
@@ -26,5 +26,23 @@
     7. Emergency contacts
     8. Address
     9. Remarks
+* Following functions would be available :
+    1. Add new contacts with above mentioned data.
+    2. List all contacts.
+    3. Search contacts based on Name and Patient ID.
+    4. Edit contacts.
+    5. Delete contacts.    
+
+ ## Advantages
+* Easy accessibility of the information as any required information is just a click away.
+* As the information maybe accessed with Patient ID or Name, it saves a lot of time, unlike otherwise.   
+* Supports Green Initiative as this would save a lot paper by being in the soft format.
+
+## Challenges
+* Chances of information getting leaked and getting into public domain, if precautions not taken.
+
+
+
+
 
 
