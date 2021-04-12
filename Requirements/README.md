@@ -1,5 +1,8 @@
 # Requirements
 
+# Title
+### Contact Management System 
+
 ## Introduction
 * Hospitals and clinics are the places where our body gets the required maintenance services like the car gets in the garage. If we go with the dictionary, hospital is a health care institution providing patient treatment with specialized medical and nursing staff and medical equipment. 
 
@@ -12,4 +15,17 @@
 ## Scope for technology to bang in!
 * In this project, one of the corners where technology can play a role will be discussed. As far as hospitals are concerned, maintaining records is a very important job as it holds a vital role to play. When the record of a patient is stored against his/her name or unique id it becomes very easy to track multiple required info. For example : previous visits could be traced, previous complications can be traced, and so on.
 <img src =  "https://www.governmentcomputing.com/wp-content/uploads/sites/32/2019/08/medical-781422_960_720.jpg" />
+
+## About this project
+* In this project, we will be storing following data of a patient: 
+    1. Name
+    2. Patient ID
+    3. Doctor 
+    4. Last visit
+    5. Mobile Number
+    6. Email ID
+    7. Emergency contacts
+    8. Address
+    9. Remarks
+
 
