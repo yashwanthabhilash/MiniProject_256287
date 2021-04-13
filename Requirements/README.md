@@ -56,6 +56,25 @@
 
 <img src = "https://github.com/yashwanthabhilash/MiniProject_256287/blob/8152d9508b1c61a43303da0e5c0ab2f76eb19fc7/Requirements/SWOT_Analysis.jpg" />
 
+## 4W's and 1H
+
+### Who:
+* Hospitals and clinics would be the beneficiaries of this system.
+### What:
+* Contacts and health records will be managed and maintained with the help of this system.
+### When:
+* During the patient intake, the process will be initiated.
+### Where:
+* Across the medical establishments.
+### How:
+* Data will be manually entered once the process is initiated.
+
+## Detailed Requirements :
+
+### High Level Requirements:
+
+### Low Level Requirements:
+
 
 
 
