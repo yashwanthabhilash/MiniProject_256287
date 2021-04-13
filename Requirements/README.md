@@ -52,7 +52,9 @@
 
 <img src = "https://github.com/yashwanthabhilash/MiniProject_256287/blob/85cf08b477da687362eb590a1b8caa7aabd22b75/Requirements/System_Diagram.jpeg" />
 
+## SWOT Analysis
 
+<img src = "https://github.com/yashwanthabhilash/MiniProject_256287/blob/8152d9508b1c61a43303da0e5c0ab2f76eb19fc7/Requirements/SWOT_Analysis.jpg" />
 
 
 
