@@ -9,11 +9,13 @@
 
 ## How Hospitals operate?
 * A hospital contains one or more wards that house hospital beds for inpatients. It may also have acute services such as an emergency department, operating theatre, and intensive care unit, as well as a range of medical specialty departments. A well-equipped hospital may be classified as a trauma center. They may also have other services such a hospital pharmacy, radiology, pathology and medical laboratories. Some hospitals have outpatient departments such as behavioral health services, dentistry, and rehabilitation services.
-<img src = "https://www.hok.com/wp-content/uploads/2020/10/healthcare-grid-1900.jpg" />
+
+<img src = "https://github.com/yashwanthabhilash/MiniProject_256287/blob/85cf08b477da687362eb590a1b8caa7aabd22b75/Requirements/System_Operations.jpg" />
 
 ## Scope for technology to bang in!
 * In this project, one of the corners where technology can play a role will be discussed. As far as hospitals are concerned, maintaining records is a very important job as it holds a vital role to play. When the record of a patient is stored against his/her name or unique id it becomes very easy to track multiple required info. For example : previous visits could be traced, previous complications can be traced, and so on.
-<img src =  "https://www.governmentcomputing.com/wp-content/uploads/sites/32/2019/08/medical-781422_960_720.jpg" />
+
+<img src =  "https://github.com/yashwanthabhilash/MiniProject_256287/blob/85cf08b477da687362eb590a1b8caa7aabd22b75/Requirements/Medical_Records.jpg" />
 
 ## About this project
 * In this project, we will be storing following data of a patient: 
@@ -40,6 +42,17 @@
 
 ## Challenges
 * Chances of information getting leaked and getting into public domain, if precautions not taken.
+
+## Cost and features with time
+
+## Defining the system
+* When we consider hospital as a single unit there are several systems working together, each system contributes towards completion of any task that a hospital handles. One important system is the Contact Management System of the hospital. Why is it important? Because, a lot of time is saved as the data regarding any particular patient is just a click away thus easy to access. 
+
+* The data collected by contact management system further serves several other systems as a information, for example: to name some, for accounts purpose, for research purpose, for analytics purpose, for crowd management purpose and so on.
+
+<img src = "https://github.com/yashwanthabhilash/MiniProject_256287/blob/85cf08b477da687362eb590a1b8caa7aabd22b75/Requirements/System_Diagram.jpeg" />
+
+
 
 
 
