@@ -10,60 +10,6 @@
 
 #include<dos.h>
 
-void login()
-{
-	int a=0,i=0;
-    char uname[10],c=' '; 
-    char pword[10],code[10];
-    char user[10]="user";
-    char pass[10]="pass";
-    do
-{
-	
-    printf("\n  \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\  LOGIN FORM  \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\  ");
-    printf(" \n\n                  ENTER USERNAME:-");
-	scanf("%s", &uname); 
-	printf(" \n\n                  ENTER PASSWORD:-");
-	while(i<10)
-	{
-	    pword[i]=getch();
-	    c=pword[i];
-	    if(c==13) break;
-	    else printf("*");
-	    i++;
-	}
-	pword[i]='\0';
-	//char code=pword;
-	i=0;
-	//scanf("%s",&pword); 
-		if(strcmp(uname,"user")==0 && strcmp(pword,"pass")==0)
-	{
-	printf("  \n\n\n       WELCOME TO CONTACT MANAGEMENT SYSTEM !!!! LOGIN IS SUCCESSFUL");
-	printf("\n\n\n\t\t\t\tPress any key to continue...");
-	getch();//holds the screen
-	break;
-	}
-	else
-	{
-		printf("\n        SORRY !!!!  LOGIN IS UNSUCESSFUL");
-		a++;
-		
-		getch();//holds the screen
-		
-	}
-}
-	while(a<=2);
-	if (a>2)
-	{
-		printf("\nSorry you have entered the wrong username and password for four times!!!");
-		
-		getch();
-		
-		}
-		system("cls");
-		
-}
-
 struct contact
 
 {
@@ -85,20 +31,14 @@ int main()
 {
 
 main:
-	login();
-	time_t t;
-	time(&t);
 
     system("cls");    /* ************Main menu ***********************  */
 
-    printf("\n\t \xB2\xB2\xB2\xB2\xB2\xB2 Contact Management System \xB2\xB2\xB2\xB2\xB2\xB2");
+    printf("\n\t **** Welcome to Contact Management System ****");
 
-    printf("\n\n\n\t\t\tMAIN MENU\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\t\t<1> Add new Contact\n\t\t<2> List all Contacts\n\t\t<3> Search for contact\n\t\t<4> Edit a Contact\n\t\t<5> Delete a Contact\n\t\t<0> Exit\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\t\t");
-    for(i=0;i<50;i++)
-		printf("-");
-     printf("\n\t\tCurrent date and time : %s",ctime(&t));
-    
-	printf("\n\t\tYour Choice:");
+    printf("\n\n\n\t\t\tMAIN MENU\n\t\t=====================\n\t\t[1] Add a new Contact\n\t\t[2] List all Contacts\n\t\t[3] Search for contact\n\t\t[4] Edit a Contact\n\t\t[5] Delete a Contact\n\t\t[0] Exit\n\t\t=================\n\t\t");
+
+    printf("Enter the choice:");
 
     scanf("%d",&ch);
 
@@ -125,7 +65,7 @@ main:
         {
             fflush(stdin);
 
-            printf("\nFullName :");
+            printf("To exit enter blank space in the name input\nName (Use identical):");
 
             scanf("%[^\n]",&list.name);
 
@@ -167,7 +107,7 @@ main:
 
         system("cls");
 
-        printf("\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\t\t\tLIST OF CONTACTS\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\nName\t\tPhone No\t    Address\t\tE-mail ad.\n=================================================================\n\n");
+        printf("\n\t\t================================\n\t\t\tLIST OF CONTACTS\n\t\t================================\n\nName\t\tPhone No\t    Address\t\tE-mail ad.\n=================================================================\n\n");
 
         for(i=97; i<=122; i=i+1)
 
