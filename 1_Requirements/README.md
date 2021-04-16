@@ -46,10 +46,9 @@
 ## Cost and Features with Time 
 | Time | Feature | Cost |
 | ----- | ----- | ----- |
-| 1968-1975  |  problem-oriented medical record (POMR) (1).  Clinicians now had access to a patient’s entire medical history and the system allowed third-party facilities to verify diagnoses | $1 Million |
-| 1982 | Dragon Systems developed a voice recognition prototype,  they were used more for billing and scheduling rather than electronic medical records.| $0.25 Million |
-| 1991 | Master Patient Index (MPI) was introduced in the 1980s to keep track of patients and their medical data. This paved the way for the Indiana Network for Patient Care (INPC)| Cost-effective |
-| 2009 |  Health Information Technology for Economic and Clinical Health (HITECH)| $0.5 Million |
+| 1991 | Contact Management System for Hospitals introduce in India| Cost effective |
+| 2009 |  Health Information Technology for Economic and Clinical Health (HITECH)| Approx 2500/day for a medium hospital |
+##### above data according to International Journal of Medicine and Public Health - Jul-Sep 2014 - Vol 4 - Issue 3
 
 ## Defining the system
 * When we consider hospital as a single unit there are several systems working together, each system contributes towards completion of any task that a hospital handles. One important system is the Contact Management System of the hospital. Why is it important? Because, a lot of time is saved as the data regarding any particular patient is just a click away thus easy to access. 
