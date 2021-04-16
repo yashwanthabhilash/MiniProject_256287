@@ -1,16 +1,16 @@
 /**
  * @file header.h
- * @author DEV GUPTA (guptadev359@gmail.com)
+ * @author Yashwanth(yashwanthabhilash@outlokk.com)
  * 
- * @brief Database Management System for Students using five operations
- * 1. add record
- * 2. delete record
- * 3. modify record
- * 4. view record
- * 5. search record
+ * @brief Contact Management System for Hospitals with below options
+ * 1. add contact
+ * 2. delete contact
+ * 3. modify contact
+ * 4. view contact
+ * 5. search contact
  * 
  * @version 0.1
- * @date 2021-04-14
+ * @date 2021-04-15
  * 
  * @copyright Copyright (c) 2021
  * 
@@ -27,58 +27,50 @@
 #include<string.h>
 
 /**
- * @brief gotoxy function is used to place cursor at a desired location.
- * It accepts two args as x and y coordinate of the location.
- * 
- */
-void gotoxy(int ,int );
-
-/**
- * @brief menu function will show you the menu of all the available choices/operations.
+ * @brief menu function will show all the available options to the admin.
  * 
  */
 void menu();
 
 /**
- * @brief to add a record by providing some data about the student.
+ * @brief to add a record by providing some data about the patient.
  * 
  */
 void add();
 
 /**
- * @brief to view all the database entries available in file.
+ * @brief to view all the record entries available in file.
  * 
  */
 void view();
 
 /**
- * @brief to search a particular database among the whole database of students by typing the name.
+ * @brief to search a particular record among the whole database of patients by typing the name.
  * 
  */
 void search();
 
 /**
- * @brief if we want to update data about any student, type his/her name and enter details again.
+ * @brief if admin wants to update record of any patient, type his/her name and enter details again.
  * 
  */
 void modify();
 
 /**
- * @brief if any student no longer exist in school then we can delete his/her data by searching his name.
+ * @brief if anyrecord of any patient needs to deleted.
  * 
  */
 void deleterec();
 
 /**
- * @brief a structure to define info stored in student data.
+ * @brief a structure to define info stored in patient record.
  * 
  */
 struct student
 {
     char name[20];
     char mobile[10];
-    int rollno;
-    char course[20];
-    char branch[20];
+    char address[20];
+    char email[20];
 };
 #endif
