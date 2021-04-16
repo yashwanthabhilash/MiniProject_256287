@@ -8,12 +8,12 @@
 PROJECT_NAME = SDBMS.exe
 
 SRC = main.c\
-src/add.c\
-src/modify.c\
-src/view.c\
-src/search.c\
-src/delete.c\
-src/gotoxy.c
+src/addcontact.c\
+src/modifycontact.c\
+src/viewcontact.c\
+src/searchcontact.c\
+src/deletecontact.c\
+src/menu.c
 
 INC = inc
 
