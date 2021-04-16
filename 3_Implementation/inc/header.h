@@ -36,41 +36,41 @@ void menu();
  * @brief to add a record by providing some data about the patient.
  * 
  */
-void add();
+void addcontact();
 
 /**
  * @brief to view all the record entries available in file.
  * 
  */
-void view();
+void viewcontact();
 
 /**
  * @brief to search a particular record among the whole database of patients by typing the name.
  * 
  */
-void search();
+void searchcontact();
 
 /**
  * @brief if admin wants to update record of any patient, type his/her name and enter details again.
  * 
  */
-void modify();
+void modifycontact();
 
 /**
  * @brief if anyrecord of any patient needs to deleted.
  * 
  */
-void deleterec();
+void deletecontact();
 
 /**
  * @brief a structure to define info stored in patient record.
  * 
  */
-struct student
+struct contact
 {
     char name[20];
-    char mobile[10];
+    long ph;
     char address[20];
-    char email[20];
+    char email[30];
 };
 #endif
