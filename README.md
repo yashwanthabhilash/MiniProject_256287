@@ -23,3 +23,9 @@ Folder             | Description
 
 [![C/C++ CI](https://github.com/yashwanthabhilash/MiniProject_256287/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/yashwanthabhilash/MiniProject_256287/actions/workflows/c-cpp.yml)
 #### *failing due to conio.h, will be rectified.
+
+## References :
+-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+-codewithc.com
+-lucidchart.com
+-smartdraw.com
