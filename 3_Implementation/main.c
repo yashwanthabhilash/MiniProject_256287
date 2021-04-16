@@ -1,21 +1,75 @@
-/*Using this project, we can easily add, view, edit, search and delete contacts.
-We can list contacts by name, phone no., address, and email.
-File handling is used to record all data so that after termination of the program data persists.
-Here a data structure is used to store the name, email, and contact.
-Coding of the project is short and simple.*/
-
 #include<stdio.h>
-#include<string.h>
-#include<process.h>
+
 #include<conio.h>
+
+#include<string.h>
+
+#include<process.h>
+
 #include<stdlib.h>
+
 #include<dos.h>
-  
+
+void login()
+{
+	int a=0,i=0;
+    char uname[10],c=' '; 
+    char pword[10],code[10];
+    char user[10]="user";
+    char pass[10]="pass";
+    do
+{
+	
+    printf("\n  \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\  LOGIN FORM  \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\  ");
+    printf(" \n\n                  ENTER USERNAME:-");
+	scanf("%s", &uname); 
+	printf(" \n\n                  ENTER PASSWORD:-");
+	while(i<10)
+	{
+	    pword[i]=getch();
+	    c=pword[i];
+	    if(c==13) break;
+	    else printf("*");
+	    i++;
+	}
+	pword[i]='\0';
+	//char code=pword;
+	i=0;
+	//scanf("%s",&pword); 
+		if(strcmp(uname,"user")==0 && strcmp(pword,"pass")==0)
+	{
+	printf("  \n\n\n       WELCOME TO CONTACT MANAGEMENT SYSTEM !!!! LOGIN IS SUCCESSFUL");
+	printf("\n\n\n\t\t\t\tPress any key to continue...");
+	getch();//holds the screen
+	break;
+	}
+	else
+	{
+		printf("\n        SORRY !!!!  LOGIN IS UNSUCESSFUL");
+		a++;
+		
+		getch();//holds the screen
+		
+	}
+}
+	while(a<=2);
+	if (a>2)
+	{
+		printf("\nSorry you have entered the wrong username and password for four times!!!");
+		
+		getch();
+		
+		}
+		system("cls");
+		
+}
+
 struct contact
 
 {
 
     long ph;
+
     char name[20],add[20],email[30];
 
 } list;
@@ -25,35 +79,41 @@ char query[20],name[20];
 FILE *fp, *ft;
 
 int i,n,ch,l,found;
-//Start of main//
+
 int main()
 
 {
 
 main:
+	login();
+	time_t t;
+	time(&t);
 
     system("cls");    /* ************Main menu ***********************  */
-    system("color 3f");
-    printf("\n\t **** CONTACT MANAGEMENT SYSTEM FOR HOSPITALS ****");
-    
-    printf("\n\n\n\t\t\tMAIN MENU\n\t\t=====================\n\t\t[1] Add a New Contact\n\t\t[2] List all Contacts\n\t\t[3] Search for Contact\n\t\t[4] Edit a Contact\n\t\t[5] Delete a Contact\n\t\t[0] Exit\n\t\t=================\n\t\t");
 
-    printf("Enter Your Choice: ");
+    printf("\n\t \xB2\xB2\xB2\xB2\xB2\xB2 Contact Management System \xB2\xB2\xB2\xB2\xB2\xB2");
+
+    printf("\n\n\n\t\t\tMAIN MENU\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\t\t<1> Add new Contact\n\t\t<2> List all Contacts\n\t\t<3> Search for contact\n\t\t<4> Edit a Contact\n\t\t<5> Delete a Contact\n\t\t<0> Exit\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\t\t");
+    for(i=0;i<50;i++)
+		printf("-");
+     printf("\n\t\tCurrent date and time : %s",ctime(&t));
+    
+	printf("\n\t\tYour Choice:");
 
     scanf("%d",&ch);
 
     switch(ch)
 
     {
-	//This case is used for Exit//
+
     case 0:
 
-        printf("\n\n\t\tAre You Sure To Exit?");
+        printf("\n\n\t\tAre you sure you want to exit?");
 
         break;
 
         /* *********************Add new contacts************  */
-	//This case is used for Add a new Contact//
+
     case 1:
 
         system("cls");
@@ -65,7 +125,7 @@ main:
         {
             fflush(stdin);
 
-            printf("To Exit Enter Blank Space in the Name Input\nName (Use identical): ");
+            printf("\nFullName :");
 
             scanf("%[^\n]",&list.name);
 
@@ -75,19 +135,19 @@ main:
 
             fflush(stdin);
 
-            printf("Phone: ");
+            printf("Phone:");
 
             scanf("%ld",&list.ph);
 
             fflush(stdin);
 
-            printf("Address: ");
+            printf("address:");
 
             scanf("%[^\n]",&list.add);
 
             fflush(stdin);
 
-            printf("Email Address: ");
+            printf("email address:");
 
             gets(list.email);
 
@@ -102,12 +162,12 @@ main:
         break;
 
         /* *********************list of contacts*************************  */
-	//This case is used for List all Contact//
+
     case 2:
 
         system("cls");
 
-        printf("\n\t\t================================\n\t\t\tLIST OF CONTACTS\n\t\t================================\n\nName\t\tPhone No\t    Address\t\tE-mail\n=================================================================\n\n");
+        printf("\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\t\t\tLIST OF CONTACTS\n\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\nName\t\tPhone No\t    Address\t\tE-mail ad.\n=================================================================\n\n");
 
         for(i=97; i<=122; i=i+1)
 
@@ -152,7 +212,7 @@ main:
         break;
 
         /* *******************search contacts**********************  */
-	//This case is used search for Contact //
+
     case 3:
 
         system("cls");
@@ -229,7 +289,7 @@ main:
         break;
 
         /* *********************edit contacts************************/
-	//This case is used for Edit a Contact//
+
     case 4:
 
         system("cls");
@@ -295,7 +355,7 @@ main:
         break;
 
         /* ********************delete contacts**********************/
-	//This case is used for Delete a Contact//
+
     case 5:
 
         system("cls");
@@ -360,4 +420,4 @@ main:
 
     return 0;
 
-}//end of main
+}
