@@ -48,7 +48,7 @@
 | ----- | ----- | ----- |
 | 1991 | Contact Management System for Hospitals introduce in India| Cost effective |
 | 2009 |  Health Information Technology for Economic and Clinical Health (HITECH)| Approx 2500/day for a medium hospital |
-##### above data according to International Journal of Medicine and Public Health - Jul-Sep 2014 - Vol 4 - Issue 3
+##### *above data according to International Journal of Medicine and Public Health - Jul-Sep 2014 - Vol 4 - Issue 3
 
 ## Defining the system
 * When we consider hospital as a single unit there are several systems working together, each system contributes towards completion of any task that a hospital handles. One important system is the Contact Management System of the hospital. Why is it important? Because, a lot of time is saved as the data regarding any particular patient is just a click away thus easy to access. 
