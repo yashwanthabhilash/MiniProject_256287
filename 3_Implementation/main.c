@@ -10,15 +10,26 @@
 
 #include<dos.h>
 
+/**
+ * @brief contact structure stored name, phone, address and email
+ * 
+ */
 struct contact
 
+/**
+ * @brief phone is long integer and name, address,email.
+ * 
+ */
 {
 
     long ph;
 
     char name[20],add[20],email[30];
 
-} list;
+} 
+
+
+list;
 
 char query[20],name[20];
 
@@ -31,8 +42,12 @@ int main()
 {
 
 main:
+/**
+ * @brief main menu
+ * 
+ */
 
-    system("cls");    /* ************Main menu ***********************  */
+    system("cls");    
 
     printf("\n\t **** Welcome to Contact Management System ****");
 
@@ -41,6 +56,11 @@ main:
     printf("Enter the choice:");
 
     scanf("%d",&ch);
+
+    /**
+     * @brief Construct a new switch object
+     * 
+     */
 
     switch(ch)
 
@@ -58,11 +78,20 @@ main:
 
         system("cls");
 
+        /**
+         * @brief fopen opens the file where details are stored
+         * 
+         */
+
         fp=fopen("contact.dll","a");
 
         for (;;)
 
         {
+            /**
+             * @brief Construct a new fflush object
+             * 
+             */
             fflush(stdin);
 
             printf("To exit enter blank space in the name input\nName (Use identical):");
@@ -101,7 +130,10 @@ main:
 
         break;
 
-        /* *********************list of contacts*************************  */
+        /**
+         * @brief list of contacts
+         * 
+         */
 
     case 2:
 
@@ -113,6 +145,10 @@ main:
 
         {
 
+           /**
+            * @brief fopen opens file where details are stored
+            * 
+            */
             fp=fopen("contact.dll","r");
 
             fflush(stdin);
@@ -151,7 +187,10 @@ main:
 
         break;
 
-        /* *******************search contacts**********************  */
+        /**
+         * @brief search contacts
+         * 
+         */
 
     case 3:
 
@@ -228,8 +267,10 @@ main:
 
         break;
 
-        /* *********************edit contacts************************/
-
+        /**
+         * @brief edit contacts
+         * 
+         */
     case 4:
 
         system("cls");
@@ -294,7 +335,10 @@ main:
 
         break;
 
-        /* ********************delete contacts**********************/
+        /**
+         * @brief delete contacts
+         * 
+         */
 
     case 5:
 
