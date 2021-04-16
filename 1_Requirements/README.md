@@ -43,7 +43,13 @@
 ## Challenges
 * Chances of information getting leaked and getting into public domain, if precautions not taken.
 
-## Cost and features with time
+## Cost and Features with Time 
+| Time | Feature | Cost |
+| ----- | ----- | ----- |
+| 1968-1975  |  problem-oriented medical record (POMR) (1).  Clinicians now had access to a patient’s entire medical history and the system allowed third-party facilities to verify diagnoses | $1 Million |
+| 1982 | Dragon Systems developed a voice recognition prototype,  they were used more for billing and scheduling rather than electronic medical records.| $0.25 Million |
+| 1991 | Master Patient Index (MPI) was introduced in the 1980s to keep track of patients and their medical data. This paved the way for the Indiana Network for Patient Care (INPC)| Cost-effective |
+| 2009 |  Health Information Technology for Economic and Clinical Health (HITECH)| $0.5 Million |
 
 ## Defining the system
 * When we consider hospital as a single unit there are several systems working together, each system contributes towards completion of any task that a hospital handles. One important system is the Contact Management System of the hospital. Why is it important? Because, a lot of time is saved as the data regarding any particular patient is just a click away thus easy to access. 
@@ -69,11 +75,31 @@
 ### How:
 * Data will be manually entered once the process is initiated.
 
-## Detailed Requirements :
+## Detail requirements
 
-### High Level Requirements:
-
-### Low Level Requirements:
+### High Level Requirements: 
+| ID | Description | Category | Status | 
+| ----- | ----- | ------- | ---------|
+| HR01 | Admin should be able to add new patient details | Techincal | IMPLEMENTED | 
+| HR02 | Admin should be able to read a patient details| Techincal |  IMPLEMENTED  |
+| HR03 | Admin should be able to update a patient details | Techincal |  IMPLEMENTED  |
+| HR04 | Admin should be able to delete a patient details | Techincal |  IMPLEMENTED  |
+| HR05 | Admin should be able to save records in a file | Techincal |  IMPLEMENTED  |
+| HR06 | Admin should be able to read data from a file | Techincal |  IMPLEMENTED  |
+| HR07 | Data should not be lost in case of failure | Scenario | FUTURE |
+| HR08 | Data should always be stored when closing the system | Scenario |  IMPLEMENTED |
+###  Low level Requirements:
+ 
+| ID | Description | HLR ID | Status (Implemented/Future) |
+| ------ | --------- | ------ | ----- |
+| LR01 | New record should be added by providing all the asked information, name should be unique and validated from existing file or else patient record should not be accepted. | HR01 |  IMPLEMENTED  |
+| LR02 | Details of the patient can be read by name or by all contacts display. | HR02 |  IMPLEMENTED |
+| LR03 | Search results display limit per page. | HR02 | FUTURE |
+| LR04 | If admin searches for an invalid ID "No Record Found" message should be displayed. | HR02 |  IMPLEMENTED  |
+| LR05 | Admin need to search by id for the pateint details to be updated, if no such record is available then "No Record Found" Message should be displayed | HR03 |  IMPLEMENTED  |
+| LR06 | Admin need to search by id for the pateint details to be deleted, if no such record is available then "No Record Found" Message should be displayed | HR04 |  IMPLEMENTED  |
+| LR05 | User shall be able to save the files, if file already exists then it should append to file and should not overwrite it and if file does not exists then it should create a new file | HR05 |  IMPLEMENTED  |
+| LR06 | When user Log off the system perform check and save data to file (1). If new data in inserted add it to file (2). If New data is not inserted do not add anything to file | HR08 |  IMPLEMENTED  |
 
 
 
